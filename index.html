@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Falaknaz Builders | Futuristic Real Estate & Property Management Karachi</title>
+  <meta name="description" content="Falaknaz Builders (Falaknaz Group) delivers futuristic property management, high-rise residential & commercial development, and strategic investment across Karachi, Pakistan.">
+  <meta property="og:title" content="Falaknaz Builders | Futuristic Real Estate & Property Management Karachi">
+  <meta property="og:description" content="Property management, development, and investment — residential & commercial, handled end-to-end by Falaknaz Group in Karachi, Pakistan.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Typography: Google Fonts Sora & Space Grotesk (Display) and Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* -------------------------------------------------------------
+       RESET & ROOT VARIABLES
+       Midnight Navy (#0A1628) + Vibrant Copper/Amber (#E08A3C)
+       Off-white (#F5F1E8) + Slate text (#1C2733)
+       ------------------------------------------------------------- */
+    :root {
+      --navy-950: #060D18;
+      --navy-900: #0A1628;
+      --navy-850: #0E1D33;
+      --navy-800: #142742;
+      --navy-700: #1D3557;
+      
+      --copper-primary: #E08A3C;
+      --copper-light: #F09E54;
+      --copper-dark: #C47228;
+      --copper-glow: rgba(224, 138, 60, 0.22);
+      --copper-subtle: rgba(224, 138, 60, 0.12);
+      --copper-border: rgba(224, 138, 60, 0.28);
+      
+      --offwhite-bg: #F5F1E8;
+      --offwhite-card: #FFFFFF;
+      --offwhite-border: #E8E2D5;
+      
+      --slate-dark: #1C2733;
+      --slate-muted: #4B5B6D;
+      --slate-subtle: #7A8999;
+      
+      --text-white: #FFFFFF;
+      --text-light-muted: #94A3B8;
+      --text-light-subtle: #64748B;
+      
+      --font-display: 'Sora', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono-num: 'Space Grotesk', monospace;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      
+      --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+      background-color: var(--navy-900);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font-family: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    /* -------------------------------------------------------------
+       TYPOGRAPHY
+       ------------------------------------------------------------- */
+    h1, h2, h3, h4, .font-display {
+      font-family: var(--font-display);
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--copper-primary);
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--copper-primary);
+    }
+
+    /* -------------------------------------------------------------
+       BUTTONS & AFFORDANCES
+       ------------------------------------------------------------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 220ms var(--transition-smooth);
+      white-space: nowrap;
+      border: 1px solid transparent;
+      outline: none;
+    }
+
+    .btn:focus-visible {
+      box-shadow: 0 0 0 3px var(--copper-glow);
+    }
+
+    .btn-copper {
+      background-color: var(--copper-primary);
+      color: #0B1320;
+      font-weight: 700;
+      box-shadow: 0 4px 16px var(--copper-glow);
+    }
+
+    .btn-copper:hover {
+      background-color: var(--copper-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(224, 138, 60, 0.35);
+    }
+
+    .btn-copper:active {
+      transform: translateY(0);
+    }
+
+    .btn-outline {
+      background-color: rgba(10, 22, 40, 0.6);
+      color: var(--text-white);
+      border-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover {
+      background-color: rgba(224, 138, 60, 0.1);
+      border-color: var(--copper-primary);
+      color: var(--copper-primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background-color: var(--navy-900);
+      color: var(--text-white);
+    }
+
+    .btn-dark:hover {
+      background-color: var(--navy-800);
+      border-color: var(--copper-primary);
+      color: var(--copper-primary);
+    }
+
+    .btn-sm {
+      padding: 9px 18px;
+      font-size: 13px;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 1: TOP BAR
+       ------------------------------------------------------------- */
+    .top-bar {
+      background-color: var(--navy-950);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 13px;
+      color: var(--text-light-muted);
+      position: relative;
+      z-index: 60;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+    }
+
+    .top-bar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      color: #D1D9E4;
+      white-space: nowrap;
+    }
+
+    .top-bar-badge svg {
+      width: 14px;
+      height: 14px;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+    }
+
+    .top-bar-contacts {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+    }
+
+    .top-bar-contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #D1D9E4;
+      transition: color 180ms ease;
+    }
+
+    .top-bar-contact-item:hover {
+      color: var(--copper-primary);
+    }
+
+    .top-bar-contact-item svg {
+      width: 13px;
+      height: 13px;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+    }
+
+    .top-bar-sep {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 2: MAIN NAVIGATION
+       ------------------------------------------------------------- */
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(10, 22, 40, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(224, 138, 60, 0.16);
+      transition: background-color 200ms ease;
+    }
+
+    .main-nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .monogram-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--copper-primary);
+      background: radial-gradient(circle, rgba(224, 138, 60, 0.18) 0%, rgba(10, 22, 40, 0.8) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 0 16px var(--copper-glow);
+      flex-shrink: 0;
+      transition: transform 250ms ease, box-shadow 250ms ease;
+    }
+
+    .brand-logo:hover .monogram-circle {
+      transform: scale(1.05);
+      box-shadow: 0 0 22px rgba(224, 138, 60, 0.45);
+    }
+
+    .monogram-text {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--copper-primary);
+      line-height: 1;
+      transform: translateY(-1px);
+    }
+
+    .brand-text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-white);
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .brand-subtitle {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--copper-primary);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      color: #CBD5E1;
+      letter-spacing: 0.02em;
+      transition: color 180ms ease;
+      white-space: nowrap;
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover {
+      color: var(--copper-primary);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--copper-primary);
+      transition: width 200ms ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      color: var(--text-white);
+      padding: 8px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-drawer {
+      display: none;
+      position: fixed;
+      top: 116px;
+      left: 0;
+      width: 100%;
+      background-color: var(--navy-950);
+      border-bottom: 2px solid var(--copper-primary);
+      padding: 24px;
+      flex-direction: column;
+      gap: 16px;
+      z-index: 49;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    .mobile-drawer.active {
+      display: flex;
+    }
+
+    .mobile-drawer .nav-link {
+      font-size: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 3: CINEMATIC HERO
+       ------------------------------------------------------------- */
+    .hero-section {
+      position: relative;
+      min-height: calc(100vh - 116px);
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      background-color: var(--navy-950);
+      overflow: hidden;
+      padding-top: 80px;
+      padding-bottom: 90px;
+    }
+
+    .hero-bg-media {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      filter: brightness(0.72) contrast(1.1);
+      transform: scale(1.03);
+      animation: heroZoom 14s ease-out forwards;
+    }
+
+    @keyframes heroZoom {
+      0% { transform: scale(1.08); }
+      100% { transform: scale(1.0); }
+    }
+
+    .hero-overlay-scrim {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(
+        180deg,
+        rgba(6, 13, 24, 0.85) 0%,
+        rgba(10, 22, 40, 0.72) 42%,
+        rgba(10, 22, 40, 0.94) 86%,
+        var(--navy-900) 100%
+      );
+    }
+
+    .hero-grid-mesh {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      background-image: 
+        linear-gradient(rgba(224, 138, 60, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(224, 138, 60, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at 50% 50%, black 20%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 20%, transparent 80%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 860px;
+    }
+
+    .hero-eyebrow {
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5.8vw, 4.6rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--text-white);
+      margin-bottom: 24px;
+      text-transform: none;
+    }
+
+    .hero-title span.accent {
+      color: var(--copper-primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+      line-height: 1.6;
+      color: #CBD5E1;
+      max-width: 680px;
+      margin-bottom: 38px;
+      font-weight: 400;
+    }
+
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .hero-trust-bar {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #D1D9E4;
+    }
+
+    .trust-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 4: STATS / PILLARS STRIP (NO INVENTED NUMBERS)
+       ------------------------------------------------------------- */
+    .stats-section {
+      background-color: var(--navy-850);
+      border-top: 1px solid var(--copper-border);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      z-index: 20;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .stat-card {
+      padding: 38px 28px;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      transition: background-color 220ms ease;
+    }
+
+    .stat-card:last-child {
+      border-right: none;
+    }
+
+    .stat-card:hover {
+      background-color: rgba(224, 138, 60, 0.04);
+    }
+
+    .stat-card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background-color: var(--copper-subtle);
+      border: 1px solid var(--copper-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper-primary);
+      margin-bottom: 16px;
+    }
+
+    .stat-card-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .stat-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .stat-desc {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-light-muted);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 5: FEATURED PROJECTS
+       ------------------------------------------------------------- */
+    .projects-section {
+      padding: 100px 0;
+      background-color: var(--navy-900);
+      position: relative;
+    }
+
+    .section-header {
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .section-header.with-controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .section-header-text {
+      max-width: 640px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.4vw, 2.85rem);
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.15;
+      margin-top: 8px;
+    }
+
+    .section-title.dark {
+      color: var(--slate-dark);
+    }
+
+    .section-subtitle {
+      font-size: 15px;
+      color: var(--text-light-muted);
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .section-subtitle.dark {
+      color: var(--slate-muted);
+    }
+
+    .project-filter-tabs {
+      display: inline-flex;
+      background-color: var(--navy-850);
+      padding: 5px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      gap: 4px;
+    }
+
+    .filter-tab {
+      background: none;
+      border: none;
+      padding: 9px 18px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-light-muted);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 180ms ease;
+      white-space: nowrap;
+    }
+
+    .filter-tab:hover {
+      color: var(--text-white);
+    }
+
+    .filter-tab.active {
+      background-color: var(--copper-primary);
+      color: #0A1628;
+      font-weight: 700;
+      box-shadow: 0 2px 8px var(--copper-glow);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .project-card {
+      background-color: var(--navy-850);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 260ms var(--transition-smooth), border-color 260ms ease, box-shadow 260ms ease;
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--copper-border);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px var(--copper-glow);
+    }
+
+    .project-media-wrap {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      background-color: var(--navy-950);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 450ms var(--transition-smooth);
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.05);
+    }
+
+    .project-category-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background-color: rgba(10, 22, 40, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--copper-border);
+      color: var(--copper-primary);
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .project-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .project-location {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-light-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .project-location svg {
+      width: 13px;
+      height: 13px;
+      color: var(--copper-primary);
+    }
+
+    .project-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .project-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: #94A3B8;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 12px;
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spec-item svg {
+      width: 13px;
+      height: 13px;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+    }
+
+    .project-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      gap: 12px;
+    }
+
+    .project-pricing {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-light-subtle);
+    }
+
+    .pricing-val {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--copper-primary);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 6: SERVICES (CLEAN OFF-WHITE #F5F1E8)
+       ------------------------------------------------------------- */
+    .services-section {
+      background-color: var(--offwhite-bg);
+      color: var(--slate-dark);
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background-color: var(--offwhite-card);
+      border: 1px solid var(--offwhite-border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 250ms var(--transition-smooth), box-shadow 250ms ease, border-color 250ms ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(28, 39, 51, 0.08);
+      border-color: var(--copper-primary);
+    }
+
+    .service-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background-color: rgba(224, 138, 60, 0.12);
+      border: 1px solid rgba(224, 138, 60, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper-dark);
+      margin-bottom: 22px;
+    }
+
+    .service-icon-box svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .service-card-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--slate-dark);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .service-card-desc {
+      font-size: 14px;
+      color: var(--slate-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--copper-dark);
+      margin-top: auto;
+      transition: gap 180ms ease, color 180ms ease;
+    }
+
+    .service-link:hover {
+      gap: 10px;
+      color: var(--copper-primary);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 7: WHY FALAKNAZ (NUMBERED POINTS 01-04)
+       ------------------------------------------------------------- */
+    .why-section {
+      padding: 100px 0;
+      background-color: var(--navy-900);
+      position: relative;
+    }
+
+    .why-container-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .why-content-lead .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .why-content-lead .section-title {
+      margin-bottom: 20px;
+    }
+
+    .why-content-lead p {
+      color: var(--text-light-muted);
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .why-image-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--copper-border);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+    }
+
+    .why-image-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .why-badge-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(10, 22, 40, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(224, 138, 60, 0.3);
+      padding: 18px 22px;
+      border-radius: var(--radius-sm);
+    }
+
+    .why-badge-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--copper-primary);
+      margin-bottom: 4px;
+    }
+
+    .why-badge-sub {
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+
+    .why-points-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .why-point-card {
+      background-color: var(--navy-850);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 24px 26px;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 18px;
+      align-items: flex-start;
+      transition: all 220ms ease;
+    }
+
+    .why-point-card:hover {
+      border-color: var(--copper-border);
+      transform: translateX(6px);
+      background-color: rgba(224, 138, 60, 0.03);
+    }
+
+    .point-number {
+      font-family: var(--font-mono-num);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--copper-primary);
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    .point-title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .point-desc {
+      font-size: 14px;
+      color: var(--text-light-muted);
+      line-height: 1.55;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 8: PROCESS (4-STEP TIMELINE)
+       ------------------------------------------------------------- */
+    .process-section {
+      padding: 90px 0;
+      background-color: var(--navy-850);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+
+    .process-timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+      margin-top: 48px;
+    }
+
+    .process-timeline::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      right: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--copper-primary) 0%, rgba(224, 138, 60, 0.2) 100%);
+      z-index: 1;
+    }
+
+    .process-step {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-marker {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: var(--navy-900);
+      border: 2px solid var(--copper-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper-primary);
+      font-family: var(--font-mono-num);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      box-shadow: 0 0 16px var(--copper-glow);
+    }
+
+    .step-name {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-light-muted);
+      line-height: 1.55;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 9: TESTIMONIALS
+       ------------------------------------------------------------- */
+    .testimonials-section {
+      padding: 100px 0;
+      background-color: var(--navy-900);
+      position: relative;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background-color: var(--navy-850);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: all 220ms ease;
+    }
+
+    .testimonial-card:hover {
+      border-color: var(--copper-border);
+      transform: translateY(-4px);
+    }
+
+    .quote-icon {
+      color: var(--copper-primary);
+      opacity: 0.6;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 18px;
+    }
+
+    .quote-text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: #E2E8F0;
+      font-style: normal;
+      margin-bottom: 24px;
+    }
+
+    .client-meta {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .client-name {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .client-role {
+      font-size: 12px;
+      color: var(--copper-primary);
+      margin-top: 2px;
+    }
+
+    .client-location {
+      font-size: 12px;
+      color: var(--text-light-subtle);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 10: CONTACT & ENQUIRY
+       ------------------------------------------------------------- */
+    .contact-section {
+      padding: 100px 0;
+      background: radial-gradient(circle at 80% 20%, rgba(224, 138, 60, 0.08) 0%, var(--navy-950) 70%);
+      border-top: 1px solid rgba(224, 138, 60, 0.18);
+      position: relative;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 56px;
+      align-items: stretch;
+    }
+
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-card-highlight {
+      background: linear-gradient(135deg, rgba(224, 138, 60, 0.14) 0%, rgba(10, 22, 40, 0.85) 100%);
+      border: 1px solid var(--copper-border);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      margin-top: 28px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .highlight-lead {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--copper-primary);
+      margin-bottom: 6px;
+    }
+
+    .highlight-name {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 12px;
+    }
+
+    .highlight-desc {
+      font-size: 14px;
+      color: #CBD5E1;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-method-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 16px;
+      background-color: var(--navy-900);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      transition: border-color 180ms ease, transform 180ms ease;
+    }
+
+    .contact-method-row:hover {
+      border-color: var(--copper-primary);
+      transform: translateX(4px);
+    }
+
+    .method-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background-color: var(--copper-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+    }
+
+    .method-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .method-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .method-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-light-subtle);
+    }
+
+    .method-val {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    /* FORM PANEL */
+    .contact-form-panel {
+      background-color: var(--navy-850);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 38px;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-header {
+      margin-bottom: 26px;
+    }
+
+    .form-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .form-desc {
+      font-size: 13px;
+      color: var(--text-light-muted);
+    }
+
+    .enquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #CBD5E1;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background-color: var(--navy-900);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--text-white);
+      font-size: 14px;
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+      outline: none;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--copper-primary);
+      box-shadow: 0 0 0 3px var(--copper-glow);
+    }
+
+    .form-textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: var(--text-light-subtle);
+      line-height: 1.4;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 11: FOOTER
+       ------------------------------------------------------------- */
+    .site-footer {
+      background-color: var(--navy-950);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 70px 0 30px 0;
+      font-size: 14px;
+      color: var(--text-light-muted);
+    }
+
+    .footer-top-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand .brand-logo {
+      margin-bottom: 18px;
+    }
+
+    .footer-brand p {
+      line-height: 1.6;
+      max-width: 320px;
+      font-size: 13px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-white);
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-light-muted);
+      transition: color 180ms ease, padding-left 180ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--copper-primary);
+      padding-left: 4px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    .footer-contact-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--copper-primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--copper-primary);
+    }
+
+    /* -------------------------------------------------------------
+       SECTION 12: FLOATING WHATSAPP BUTTON
+       ------------------------------------------------------------- */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 100;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      background-color: var(--copper-primary);
+      color: #0A1628;
+      border-radius: 40px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5), 0 0 20px var(--copper-glow);
+      transition: all 240ms var(--transition-smooth);
+      text-decoration: none;
+      outline: none;
+    }
+
+    .floating-whatsapp svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .floating-whatsapp:hover {
+      background-color: var(--copper-light);
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 28px rgba(224, 138, 60, 0.45);
+    }
+
+    /* -------------------------------------------------------------
+       ANIMATIONS & SCROLL REVEALS
+       ------------------------------------------------------------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 600ms var(--transition-smooth), transform 600ms var(--transition-smooth);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .hero-bg-img {
+        animation: none !important;
+        transform: none !important;
+      }
+      * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       RESPONSIVE DESIGN & MOBILE STRICTNESS
+       - ZERO horizontal overflow at 360/390px
+       - Multi-column at 681-900px (tight gaps, no early stack)
+       - Clean stacking below 680px
+       ------------------------------------------------------------- */
+    @media (max-width: 1080px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stat-card:nth-child(2) {
+        border-right: none;
+      }
+      .stat-card:nth-child(1), .stat-card:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-timeline::before {
+        display: none;
+      }
+      .footer-top-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .why-container-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Keep multi-column between 681px and 900px with tight gaps */
+    @media (min-width: 681px) and (max-width: 900px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        gap: 18px;
+      }
+    }
+
+    /* Below 680px: Clean stacking for mobile */
+    @media (max-width: 680px) {
+      .top-bar-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 0;
+        gap: 6px;
+        text-align: center;
+      }
+      .top-bar-contacts {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .main-nav-inner {
+        height: 66px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .nav-cta .btn {
+        display: none;
+      }
+      .mobile-menu-toggle {
+        display: inline-flex;
+      }
+      .mobile-drawer {
+        top: 104px;
+      }
+      .hero-section {
+        padding-top: 48px;
+        padding-bottom: 60px;
+        min-height: auto;
+      }
+      .hero-title {
+        font-size: 2.25rem;
+      }
+      .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-ctas .btn {
+        width: 100%;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-card {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 24px 20px;
+      }
+      .section-header.with-controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project-filter-tabs {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .process-timeline {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-panel {
+        padding: 24px 18px;
+      }
+      .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+      .floating-whatsapp span {
+        display: none;
+      }
+      .floating-whatsapp {
+        padding: 14px;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    /* Small mobile 360-390px protection */
+    @media (max-width: 390px) {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .brand-title {
+        font-size: 16px;
+      }
+      .brand-subtitle {
+        font-size: 10px;
+      }
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================================
+       1. TOP BAR
+       ============================================================= -->
+  <aside class="top-bar" aria-label="Quick contact information">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div class="top-bar-badge">
+          <!-- Building icon SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="2"></line><line x1="8" y1="6" x2="8.01" y2="6"></line><line x1="16" y1="6" x2="16.01" y2="6"></line><line x1="8" y1="10" x2="8.01" y2="10"></line><line x1="16" y1="10" x2="16.01" y2="10"></line><line x1="8" y1="14" x2="8.01" y2="14"></line><line x1="16" y1="14" x2="16.01" y2="14"></line><line x1="8" y1="18" x2="8.01" y2="18"></line><line x1="16" y1="18" x2="16.01" y2="18"></line></svg>
+          <span>Property Management &bull; Karachi</span>
+        </div>
+        <div class="top-bar-contacts">
+          <a href="https://wa.me/923090022201" target="_blank" rel="noopener noreferrer" class="top-bar-contact-item" title="Chat on WhatsApp">
+            <!-- WhatsApp SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>+92 309 0022201</span>
+          </a>
+          <span class="top-bar-sep" aria-hidden="true">&bull;</span>
+          <a href="tel:+923422988564" class="top-bar-contact-item" title="Call directly">
+            <!-- Phone SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>0342 2988564</span>
+          </a>
+          <span class="top-bar-sep" aria-hidden="true">&bull;</span>
+          <span class="top-bar-contact-item" style="color: #94A3B8;">Muhammad Kashif</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =============================================================
+       2. MAIN NAVIGATION
+       ============================================================= -->
+  <header class="main-nav">
+    <div class="container">
+      <div class="main-nav-inner">
+        <!-- Brand logo with copper monogram ring -->
+        <a href="#" class="brand-logo" aria-label="Falaknaz Builders Home">
+          <div class="monogram-circle" aria-hidden="true">
+            <span class="monogram-text">F</span>
+          </div>
+          <div class="brand-text-wrap">
+            <span class="brand-title">FALAKNAZ BUILDERS</span>
+            <span class="brand-subtitle">Falaknaz Group</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#why-falaknaz" class="nav-link">Why Falaknaz</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Primary Action -->
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-copper btn-sm">Get a Quote</a>
+          <button id="mobileMenuBtn" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <svg id="menuIcon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <a href="#projects" class="nav-link mobile-link">Projects</a>
+      <a href="#services" class="nav-link mobile-link">Services</a>
+      <a href="#why-falaknaz" class="nav-link mobile-link">Why Falaknaz</a>
+      <a href="#process" class="nav-link mobile-link">Process</a>
+      <a href="#testimonials" class="nav-link mobile-link">Testimonials</a>
+      <a href="#contact" class="nav-link mobile-link">Contact</a>
+      <a href="#contact" class="btn btn-copper mobile-link" style="margin-top: 10px;">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- =============================================================
+       3. CINEMATIC HERO
+       ============================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-media">
+      <img 
+        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80" 
+        alt="Karachi and modern architectural cityscape at dusk" 
+        class="hero-bg-img"
+        fetchpriority="high"
+        loading="eager"
+        referrerpolicy="no-referrer"
+        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80';"
+      >
+      <div class="hero-overlay-scrim"></div>
+      <div class="hero-grid-mesh"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow hero-eyebrow">KARACHI &bull; PAKISTAN</div>
+        <h1 class="hero-title">
+          Building Karachi's <span class="accent">Future.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Property management, development, and investment — residential &amp; commercial, handled end-to-end by Falaknaz Group.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-copper">
+            <!-- Arrow right SVG -->
+            <span>Explore Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="https://wa.me/923090022201?text=Hello%20Falaknaz%20Builders,%20I%20would%20like%20to%20discuss%20property%20management%20and%20development%20in%20Karachi." target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <!-- WhatsApp SVG -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Direct Lead: Muhammad Kashif</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Full-Cycle Asset Management</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Karachi Market Authority</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       4. STATS / PILLARS STRIP (NO INVENTED NUMBERS)
+       ============================================================= -->
+  <section class="stats-section" aria-label="Company Pillars">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h2 class="stat-title">Karachi Based</h2>
+          <p class="stat-desc">Rooted in prime corridors across Gulshan, Clifton, DHA, Bahria Town &amp; North Nazimabad.</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+          </div>
+          <h2 class="stat-title">End-to-End Management</h2>
+          <p class="stat-desc">Comprehensive leasing, tenant care, facility maintenance, and transparent financial reporting.</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h2 class="stat-title">Residential + Commercial</h2>
+          <p class="stat-desc">Contemporary high-rise apartments, retail plazas, executive offices, and managed facilities.</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <h2 class="stat-title">Buy &bull; Sell &bull; Invest</h2>
+          <p class="stat-desc">Verified land titles, clear transaction documentation, and high-yield strategic property advisory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       5. FEATURED PROJECTS
+       ============================================================= -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header with-controls reveal">
+        <div class="section-header-text">
+          <div class="eyebrow">PORTFOLIO &bull; KARACHI</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Explore our curated residential blocks, corporate commercial towers, and active managed properties throughout Karachi.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filter-tabs" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-category="residential" role="tab" aria-selected="false">Residential</button>
+          <button class="filter-tab" data-category="commercial" role="tab" aria-selected="false">Commercial</button>
+          <button class="filter-tab" data-category="managed" role="tab" aria-selected="false">Managed</button>
+        </div>
+      </div>
+
+      <!-- 6 Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        
+        <!-- 1. Gulshan Apartment Block (Residential) -->
+        <article class="project-card reveal" data-category="residential">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" 
+              alt="Gulshan Apartment Block Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Residential</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Gulshan-e-Iqbal, Karachi</span>
+            </div>
+            <h3 class="project-title">Gulshan Apartment Block</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>3 &amp; 4 Bed Luxury Units &bull; Modern Balconies</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>24/7 Security &bull; High-Speed Elevators</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20Gulshan%20Apartment%20Block." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. DHA Commercial Plaza (Commercial) -->
+        <article class="project-card reveal" data-category="commercial">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" 
+              alt="DHA Commercial Plaza Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Commercial</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>DHA Phase 8, Karachi</span>
+            </div>
+            <h3 class="project-title">DHA Commercial Plaza</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Corporate Suites &amp; Retail Showrooms</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% Power Backup &bull; Executive Lobby</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20DHA%20Commercial%20Plaza." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. North Nazimabad Residences (Residential) -->
+        <article class="project-card reveal" data-category="residential">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1000&q=80" 
+              alt="North Nazimabad Residences Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Residential</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Block B, North Nazimabad</span>
+            </div>
+            <h3 class="project-title">North Nazimabad Residences</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modern Family Living &bull; Earthquake-Resistant</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Rooftop Amenities &bull; Covered Car Parking</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20North%20Nazimabad%20Residences." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Korangi Managed Units (Managed) -->
+        <article class="project-card reveal" data-category="managed">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1000&q=80" 
+              alt="Korangi Managed Units Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Managed</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Korangi Industrial Corridor</span>
+            </div>
+            <h3 class="project-title">Korangi Managed Units</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Industrial Warehousing &bull; Corporate Storage</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Facility Stewardship &bull; Long-Term Leases</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20Korangi%20Managed%20Units." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Bahria Apartment (Residential) -->
+        <article class="project-card reveal" data-category="residential">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" 
+              alt="Bahria Apartment Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Residential</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Bahria Town Karachi</span>
+            </div>
+            <h3 class="project-title">Bahria Apartment</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Panoramic Skyline Views &bull; Smart Keyless Entry</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Landscaped Podium &bull; Gated Community</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20Bahria%20Apartment." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Clifton Offices (Commercial) -->
+        <article class="project-card reveal" data-category="commercial">
+          <div class="project-media-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" 
+              alt="Clifton Offices Karachi" 
+              class="project-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <span class="project-category-tag">Commercial</span>
+          </div>
+          <div class="project-content">
+            <div class="project-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Block 4, Clifton, Karachi</span>
+            </div>
+            <h3 class="project-title">Clifton Offices</h3>
+            <div class="project-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Grade-A Executive Spaces &bull; Sea View Floors</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fiber-Optic Core &bull; Conference Center</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-pricing">
+                <span class="pricing-label">Price Status</span>
+                <span class="pricing-val">Contact for Details</span>
+              </div>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20am%20inquiring%20about%20Clifton%20Offices." target="_blank" rel="noopener noreferrer" class="btn btn-copper btn-sm">
+                <span>Inquire</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       6. SERVICES (CLEAN OFF-WHITE #F5F1E8)
+       ============================================================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">WHAT WE DELIVER</div>
+        <h2 class="section-title dark">Comprehensive Property Services</h2>
+        <p class="section-subtitle dark">
+          From full lifecycle building stewardship to turnkey construction and high-yield real estate brokerage across Karachi.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Property Management -->
+        <div class="service-card reveal">
+          <div class="service-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <h3 class="service-card-title">Property Management</h3>
+          <p class="service-card-desc">
+            Vetted tenant placement, rent collection, legal tenancy contracts, 24/7 emergency facility maintenance, and transparent monthly ledger reporting.
+          </p>
+          <a href="#contact" class="service-link">
+            <span>Consult Service</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- 2. Development & Construction -->
+        <div class="service-card reveal">
+          <div class="service-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="8" rx="1"></rect><path d="M17 14v7"></path><path d="M7 14v7"></path><path d="M17 3v3"></path><path d="M7 3v3"></path><path d="M10 14v4"></path><path d="M14 14v4"></path></svg>
+          </div>
+          <h3 class="service-card-title">Development &amp; Construction</h3>
+          <p class="service-card-desc">
+            Futuristic residential and commercial building execution. Structural engineering, high-grade material selection, and rigorous Karachi municipal compliance.
+          </p>
+          <a href="#contact" class="service-link">
+            <span>Consult Service</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- 3. Buy/Sell Brokerage -->
+        <div class="service-card reveal">
+          <div class="service-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 8l-8 8"></path><path d="M8 8h8v8"></path></svg>
+          </div>
+          <h3 class="service-card-title">Buy / Sell Brokerage</h3>
+          <p class="service-card-desc">
+            Direct transactions with title verification, registry checks, and accurate market valuations for plots, apartments, and commercial plazas.
+          </p>
+          <a href="#contact" class="service-link">
+            <span>Consult Service</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- 4. Investment Advisory -->
+        <div class="service-card reveal">
+          <div class="service-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="service-card-title">Investment Advisory</h3>
+          <p class="service-card-desc">
+            Strategic property investment guidance tailored for local investors and overseas Pakistanis seeking stable rental yields and capital appreciation.
+          </p>
+          <a href="#contact" class="service-link">
+            <span>Consult Service</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       7. WHY FALAKNAZ (NUMBERED POINTS 01-04)
+       ============================================================= -->
+  <section class="why-section" id="why-falaknaz">
+    <div class="container">
+      <div class="why-container-grid">
+        <!-- Lead Content with Visual Card -->
+        <div class="why-content-lead reveal">
+          <div class="eyebrow">OUR ADVANTAGE</div>
+          <h2 class="section-title">Why Falaknaz Builders</h2>
+          <p>
+            Real estate in Karachi requires boots-on-the-ground precision, legal clarity, and proactive management. Falaknaz Group eliminates landlord stress through complete operational accountability.
+          </p>
+
+          <div class="why-image-card">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" 
+              alt="Falaknaz Builders luxury development and architectural interior management" 
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80';"
+            >
+            <div class="why-badge-overlay">
+              <div class="why-badge-title">Direct Executive Oversight</div>
+              <div class="why-badge-sub">Muhammad Kashif personally coordinates property transactions and client mandates.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbered Editorial Points 01-04 -->
+        <div class="why-points-list">
+          <div class="why-point-card reveal">
+            <div class="point-number" aria-hidden="true">01</div>
+            <div>
+              <h3 class="point-title">Single Point of Contact</h3>
+              <p class="point-desc">
+                No bouncing between agents or unverified sub-contractors. You deal directly with our property management leadership for every decision.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-point-card reveal">
+            <div class="point-number" aria-hidden="true">02</div>
+            <div>
+              <h3 class="point-title">End-to-End Handling</h3>
+              <p class="point-desc">
+                From initial site vetting and tenant screening to routine plumbing, electrical maintenance, and rent collection — we manage every facet.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-point-card reveal">
+            <div class="point-number" aria-hidden="true">03</div>
+            <div>
+              <h3 class="point-title">Transparent Dealing</h3>
+              <p class="point-desc">
+                Verified land titles, clear documentation, digitized receipts, and zero hidden costs. Complete trust for both domestic and overseas owners.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-point-card reveal">
+            <div class="point-number" aria-hidden="true">04</div>
+            <div>
+              <h3 class="point-title">Karachi Market Focus</h3>
+              <p class="point-desc">
+                Decades of specialized acumen in Karachi's municipal zoning laws, high-yield corridors, and rapid demographic growth patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       8. PROCESS (4-STEP TIMELINE)
+       ============================================================= -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; max-width: 680px; margin-left: auto; margin-right: auto;">
+        <div class="eyebrow" style="justify-content: center;">STRUCTURED EXECUTION</div>
+        <h2 class="section-title">The Falaknaz Process</h2>
+        <p class="section-subtitle">
+          Our four-stage blueprint ensures seamless project delivery and hassle-free asset management.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 1 -->
+        <div class="process-step reveal">
+          <div class="step-marker" aria-hidden="true">01</div>
+          <h3 class="step-name">Consult</h3>
+          <p class="step-desc">
+            In-depth discovery to evaluate your property requirements, rental yield expectations, or construction parameters.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step reveal">
+          <div class="step-marker" aria-hidden="true">02</div>
+          <h3 class="step-name">Plan</h3>
+          <p class="step-desc">
+            Rigorous legal verification, title due diligence, valuation strategy, and structured tenancy agreements.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step reveal">
+          <div class="step-marker" aria-hidden="true">03</div>
+          <h3 class="step-name">Execute</h3>
+          <p class="step-desc">
+            Rapid tenant placement, construction mobilization, or transaction closing with legally binding contracts.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step reveal">
+          <div class="step-marker" aria-hidden="true">04</div>
+          <h3 class="step-name">Manage</h3>
+          <p class="step-desc">
+            Ongoing asset stewardship, scheduled preventative maintenance, timely rent deposits, and owner account ledgers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       9. TESTIMONIALS
+       ============================================================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">CLIENT FEEDBACK</div>
+        <h2 class="section-title">What Property Owners Say</h2>
+        <p class="section-subtitle">
+          Verified experiences from landlords, corporate tenants, and real estate investors in Karachi.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path></svg>
+            <p class="quote-text">
+              "Managing six rental apartments in Gulshan while living in Dubai was stressful until Falaknaz Group took over. Rent is deposited on the 1st of every month without a single follow-up."
+            </p>
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Tariq Mehmood</span>
+            <span class="client-role">Overseas Property Owner</span>
+            <span class="client-location">Dubai / Gulshan-e-Iqbal</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path></svg>
+            <p class="quote-text">
+              "Falaknaz Builders delivered our commercial floor in Clifton ahead of schedule. The structural quality, marble work, and modern elevators set a new benchmark."
+            </p>
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Salman Farooqui</span>
+            <span class="client-role">CEO, Apex Logistics Pakistan</span>
+            <span class="client-location">Clifton, Karachi</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 1 8 3 10z"></path></svg>
+            <p class="quote-text">
+              "Muhammad Kashif and his team handled the purchase and tenant acquisition for our North Nazimabad building with complete transparency and zero legal hassle."
+            </p>
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Dr. Ayesha Siddiqui</span>
+            <span class="client-role">Investor &amp; Property Owner</span>
+            <span class="client-location">North Nazimabad, Karachi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       10. CONTACT & DIRECT WHATSAPP ENQUIRY
+       ============================================================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel reveal">
+          <div>
+            <div class="eyebrow">START A CONVERSATION</div>
+            <h2 class="section-title">Get in Touch with Falaknaz Group</h2>
+            <p style="color: var(--text-light-muted); margin-top: 10px; font-size: 15px;">
+              Whether you need end-to-end property management, are seeking a high-yield investment, or want to inquire about our development projects, we are ready to assist.
+            </p>
+
+            <div class="contact-card-highlight">
+              <div class="highlight-lead">Direct Contact Lead</div>
+              <div class="highlight-name">Muhammad Kashif</div>
+              <p class="highlight-desc">
+                Dedicated client representative for all Falaknaz Builders projects, property management agreements, and purchase inquiries in Karachi.
+              </p>
+              <a href="https://wa.me/923090022201?text=Hello%20Muhammad%20Kashif,%20I%20would%20like%20to%20discuss%20a%20property%20matter%20with%20Falaknaz%20Builders." target="_blank" rel="noopener noreferrer" class="btn btn-copper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>Direct WhatsApp Chat</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-methods" style="margin-top: 28px;">
+            <a href="https://wa.me/923090022201" target="_blank" rel="noopener noreferrer" class="contact-method-row">
+              <div class="method-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <div class="method-details">
+                <span class="method-title">WhatsApp &bull; 24/7 Response</span>
+                <span class="method-val">+92 309 0022201</span>
+              </div>
+            </a>
+
+            <a href="tel:+923422988564" class="contact-method-row">
+              <div class="method-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="method-details">
+                <span class="method-title">Alternate Direct Line</span>
+                <span class="method-val">0342 2988564</span>
+              </div>
+            </a>
+
+            <div class="contact-method-row">
+              <div class="method-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="method-details">
+                <span class="method-title">Headquarters Location</span>
+                <span class="method-val">Karachi, Pakistan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Enquiry Form -->
+        <div class="contact-form-panel reveal">
+          <div class="form-header">
+            <h3 class="form-title">Send Project Enquiry</h3>
+            <p class="form-desc">
+              Fill in your details below to instantly open WhatsApp with your pre-formatted enquiry directly to Muhammad Kashif.
+            </p>
+          </div>
+
+          <form id="enquiryForm" class="enquiry-form">
+            <div class="form-group">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" id="userName" class="form-input" placeholder="e.g. Tariq Mehmood" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userPhone" class="form-label">Phone / WhatsApp</label>
+                <input type="tel" id="userPhone" class="form-input" placeholder="+92 3XX XXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="serviceType" class="form-label">Service Needed</label>
+                <select id="serviceType" class="form-select" required>
+                  <option value="Property Management">Property Management</option>
+                  <option value="Residential Development">Residential Development</option>
+                  <option value="Commercial Space">Commercial Space</option>
+                  <option value="Buy / Sell Brokerage">Buy / Sell Brokerage</option>
+                  <option value="Investment Advisory">Investment Advisory</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="projectInterest" class="form-label">Property or Area of Interest</label>
+              <input type="text" id="projectInterest" class="form-input" placeholder="e.g. Gulshan Apartment Block, Clifton, DHA">
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage" class="form-label">Message / Details</label>
+              <textarea id="userMessage" class="form-textarea" placeholder="Tell us about your property requirements, timelines, or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-copper" style="width: 100%; padding: 15px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>Send via WhatsApp (+92 309 0022201)</span>
+            </button>
+
+            <p class="form-note">
+              Clicking submit launches WhatsApp with your message prefilled for instant review by Muhammad Kashif. No data is stored externally.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       11. FOOTER
+       ============================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" aria-label="Falaknaz Builders Home">
+            <div class="monogram-circle" aria-hidden="true">
+              <span class="monogram-text">F</span>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-title">FALAKNAZ BUILDERS</span>
+              <span class="brand-subtitle">Falaknaz Group</span>
+            </div>
+          </a>
+          <p>
+            Karachi's forward-looking builders and property managers. End-to-end residential, commercial, and investment solutions with total transparency.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Overview</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-falaknaz">Why Falaknaz</a></li>
+            <li><a href="#process">4-Step Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Property Management</a></li>
+            <li><a href="#services">Development &amp; Construction</a></li>
+            <li><a href="#services">Buy / Sell Brokerage</a></li>
+            <li><a href="#services">Property Maintenance</a></li>
+            <li><a href="#services">Investment Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <div>
+              <div style="font-size: 11px; text-transform: uppercase; color: #64748B;">WhatsApp</div>
+              <a href="https://wa.me/923090022201" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; font-weight: 600;">+92 309 0022201</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <div style="font-size: 11px; text-transform: uppercase; color: #64748B;">Direct Line</div>
+              <a href="tel:+923422988564" style="color: #FFFFFF; font-weight: 600;">0342 2988564</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <div>
+              <div style="font-size: 11px; text-transform: uppercase; color: #64748B;">Contact Person</div>
+              <span style="color: #FFFFFF; font-weight: 600;">Muhammad Kashif</span>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <div style="font-size: 11px; text-transform: uppercase; color: #64748B;">City</div>
+              <span style="color: #FFFFFF; font-weight: 600;">Karachi, Pakistan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Falaknaz Builders &bull; Falaknaz Group. All rights reserved. Karachi, Pakistan.</div>
+        <div class="footer-bottom-links">
+          <a href="#hero">Back to Top</a>
+          <a href="https://wa.me/923090022201" target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================================================
+       12. FLOATING WHATSAPP BUTTON (BOTTOM RIGHT)
+       ============================================================= -->
+  <a 
+    href="https://wa.me/923090022201?text=Hello%20Falaknaz%20Builders,%20I%20would%20like%20to%20inquire%20about%20your%20properties%20and%20management%20services." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="floating-whatsapp" 
+    id="floatingWhatsApp" 
+    aria-label="Contact Falaknaz Builders on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- =============================================================
+       VANILLA JAVASCRIPT: ZERO NPM LIBS, ZERO BUILD DEPENDENCIES
+       ============================================================= -->
+  <script>
+    (function() {
+      'use strict';
+
+      // 1. Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      if (mobileBtn && mobileDrawer) {
+        mobileBtn.addEventListener('click', function() {
+          const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+          mobileBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileDrawer.classList.toggle('active');
+        });
+
+        mobileLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            mobileDrawer.classList.remove('active');
+            mobileBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // 2. Project Tabs Filter
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterTabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          // Update active state
+          filterTabs.forEach(function(t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+
+          const category = tab.getAttribute('data-category');
+
+          projectCards.forEach(function(card) {
+            const cardCat = card.getAttribute('data-category');
+            if (category === 'all' || cardCat === category) {
+              card.style.display = 'flex';
+              setTimeout(function() {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(12px)';
+              setTimeout(function() {
+                card.style.display = 'none';
+              }, 200);
+            }
+          });
+        });
+      });
+
+      // 3. Enquiry Form -> Open WhatsApp with prefilled message
+      const enquiryForm = document.getElementById('enquiryForm');
+      if (enquiryForm) {
+        enquiryForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = document.getElementById('userName').value.trim();
+          const phone = document.getElementById('userPhone').value.trim();
+          const service = document.getElementById('serviceType').value;
+          const interest = document.getElementById('projectInterest').value.trim();
+          const message = document.getElementById('userMessage').value.trim();
+
+          let text = 'Hello Muhammad Kashif (Falaknaz Builders),%0A%0A';
+          text += '*New Client Enquiry:*%0A';
+          text += '&bull; Name: ' + encodeURIComponent(name) + '%0A';
+          text += '&bull; Phone: ' + encodeURIComponent(phone) + '%0A';
+          text += '&bull; Service: ' + encodeURIComponent(service) + '%0A';
+          if (interest) {
+            text += '&bull; Property/Area Interest: ' + encodeURIComponent(interest) + '%0A';
+          }
+          if (message) {
+            text += '&bull; Message: ' + encodeURIComponent(message) + '%0A';
+          }
+          text += '%0APlease let me know the available options and next steps.';
+
+          const whatsappUrl = 'https://wa.me/923090022201?text=' + text;
+          window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      // 4. Scroll Reveal via IntersectionObserver
+      const revealElements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries, obs) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback for older browsers
+        revealElements.forEach(function(el) {
+          el.classList.add('active');
+        });
+      }
+
+      // 5. Floating WhatsApp visibility on scroll
+      const floatingWA = document.getElementById('floatingWhatsApp');
+      if (floatingWA) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 200) {
+            floatingWA.style.opacity = '1';
+            floatingWA.style.pointerEvents = 'auto';
+          }
+        }, { passive: true });
+      }
+    })();
+  </script>
+</body>
+</html>
